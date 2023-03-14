@@ -17,24 +17,24 @@
         <nav class="nav">
             <ul class="nav__ul">
                 <li class="nav__list">
-                    <a href="#" class="nav__a">HOME</a>
+                    <a href="#home" class="nav__a">HOME</a>
                 </li>
                 <li>
-                    <a href="#" class="nav__a">ABOUT</a>
+                    <a href="#about" class="nav__a">ABOUT</a>
                 </li>
                 <li>
-                    <a href="#" class="nav__a">WORKS</a>
+                    <a href="#work" class="nav__a">WORKS</a>
                 </li>
                 <li>
-                    <a href="#" class="nav__a">BLOG</a>
+                    <a href="#blog" class="nav__a">BLOG</a>
                 </li>
                 <li>
-                    <a href="#" class="nav__a">CONTACT</a>
+                    <a href="#contact" class="nav__a">CONTACT</a>
                 </li>
             </ul>
         </nav>
 
-        <div class="title">
+        <div class="title" id="home">
             <h1 class="title__nombre">MY NAME IS ANGEL <span class="title__texto">I'M A DEVELOPER</span></h1>
         </div>
 
@@ -42,7 +42,7 @@
 
     <main class="main">
 
-        <section class="about">
+        <section class="about" id="about">
             <div class="about__saludo">
 
                 <div class="about__titulo">
@@ -55,25 +55,30 @@
                     expedita beatae ipsam nisi cum itaque soluta, aut optio inventore libero eveniet ducimus sunt
                     distinctio perferendis laboriosam eius quam eos.</p>
 
-                <p lass="about__parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate voluptate
+                <p class="about__parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate voluptate
                     quam necessitatibus sapiente mollitia provident laborum laudantium illum, tenetur dolor assumenda
                     voluptates in nihil voluptatibus, placeat dolores vitae, molestiae tempora!</p>
             </div>
         </section>
 
-        <section class="work">
-            <h2 class="work__titulo1">MY WORK</h2>
-            <h3 class="work__titulo2">awesome projects</h3>
+        <section class="work" id="work">
+            <div class="work__titulo">
+                <h2 class="work__titulo1">MY WORK</h2>
+                <h3 class="work__titulo2">awesome projects</h3>
+                <div class="work__fondo"></div>
+            </div>
         </section>
 
-        <section class="blog">
+        <section class="blog" id="blog">
             <h2 class="blog__titulo">MY BLOG</h2>
             <p class="blog__parrafo">Visita mi blog donde encontraras todo mi proceso de preparación de convertirme en
                 desarrollado web</p>
+                <button class="boton">Visitar</button>
         </section>
 
-        <section class="contact">
-            <h2 class="contact__titulo">Contactame</h2>
+        <section class="contact"  id="contact">
+            <h3 class="contact__titulo1">Aqui puedes...</h3>
+            <h2 class="contact__titulo2">Contactarme</h2>
             <ul class="contact__lista">
                 <li class="contact__item">
                     <a href="" class="contact__link">Facebook</a>
@@ -88,5 +93,4 @@
         </section>
     </main>
 </body>
-
 </html>
