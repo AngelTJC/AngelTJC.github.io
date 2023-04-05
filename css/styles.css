@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html{
+    font-size: 10px;
+}
+
+:root{
+    /* colores*/
+    --blue-p:#366BFF;
+    --blue-s:#7398FF;
+    --deepblue:#00268F;
+    --grayblue:#394C80;
+
+    /* Tamaño de fuente */
+    --sm:1.2rem;
+    --md:1.6rem;
+    --lg:1.8rem;
+    --xlg:2rem;
+
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Ubuntu', sans-serif;
+}
