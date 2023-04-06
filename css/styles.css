@@ -24,6 +24,13 @@ html{
 
 }
 
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
 body{
     font-size: 1.6rem;
     font-family: 'Ubuntu', sans-serif;
@@ -46,18 +53,17 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 2rem;
+    padding-top: 70px;
 }
 
 .header__item{
-    list-style: none;
-    padding-bottom: 1rem;
+    padding: 1rem;
 }
 
 .header__link{
     color: white;
-    text-decoration: none;
     border-bottom: 0.5rem solid var(--blue-p);
+    font-size: var(--md);
 }
 
 .header__link:hover,
@@ -77,7 +83,7 @@ body{
 
 .header__title{
     position: relative;
-    top: -124px;
+    top: -53px;
     text-align: center;
     color:white;
     font-size: var(--xlg);
@@ -91,7 +97,7 @@ body{
 
 .header__text{
     position: relative;
-    bottom: 113px;
+    bottom: 50px;
     color: white;
     font-size: var(--md);
 }
@@ -101,12 +107,13 @@ body{
     border: none;
     border-radius: 20px;
     background-color: var(--blue-p);
+    position: relative;
+    bottom: -17;
 }
 
 .boton__link{
-    text-decoration: none;
     color: white;
-    font-size: var(--sm);
+    font-size: var(--md);
     font-weight: 700;
 }
 
@@ -114,3 +121,4 @@ body{
 .boton:active{
     background-color:#44bef7;
 }
+
