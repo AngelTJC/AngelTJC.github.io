@@ -15,6 +15,7 @@ html{
     --blue-s:#7398FF;
     --deepblue:#00268F;
     --grayblue:#394C80;
+    --white-w:#F2F2F2;
 
     /* Tamaño de fuente */
     --sm:1.2rem;
@@ -122,3 +123,25 @@ body{
     background-color:#44bef7;
 }
 
+
+/* Section about-me*/
+.main__about{
+    width: 100vw;
+    height: auto;
+    background-color: var(--white-w);
+    padding: 100px 0;
+}
+
+.main-about__title{
+    text-align: center;
+    font-size: var(--lg);
+    font-weight: bold;
+    padding: 0 0 3rem 0;
+}
+
+.main-about__text{
+    width: 80%;
+    margin: 0 auto;
+    font-size: var(--md);
+    line-height: 1.6;
+}
