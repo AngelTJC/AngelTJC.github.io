@@ -292,3 +292,21 @@ body {
     background-position: center;
 }
 
+
+/* Section footer */
+.footer{
+    width: 100vw;
+    height: auto;
+    background-color: var(--grayblue);
+    padding: 40px 10px;
+}
+
+.footer p{
+    color: var(--white-w);
+    font-weight: 600;
+    font-size: var(--sm);
+}
+
+.footer p span{
+    color: var(--blue-s);
+}
