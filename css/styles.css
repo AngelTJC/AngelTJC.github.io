@@ -193,12 +193,102 @@ body {
     padding: 0 0 3rem 0;
     color: var(--deepblue);
 }
-.main-portafolio__img{
+
+.main-portafolio__img {
     width: 140px;
     margin: 0 auto;
     padding: 2.5rem;
 }
 
-.main-portafolio__img img{
+.main-portafolio__img img {
     width: 100%;
 }
+
+/* Section contact */
+
+.main__contact {
+    width: 100vw;
+    height: auto;
+    background-color: var(--pink);
+    padding: 100px 0;
+}
+
+.main-contact__title {
+    text-align: center;
+    font-size: var(--lg);
+    font-weight: bold;
+    padding: 0 0 3rem 0;
+    color: var(--deepblue);
+}
+
+.main-contact__list {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+.contact-item__title {
+    font-size: var(--md);
+    font-weight: bold;
+    padding: 3rem 0 1rem 0;
+    color: var(--blue-p);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contact--icon-size {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+}
+
+.contact-gmail {
+    background: url('../assets/contact/gmail.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-phone {
+    background: url('../assets/contact/phone.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contact__phone-number{
+    font-size: var(--md);
+    color: var(--deepblue);
+}
+
+.contact-socialm {
+    background: url('../assets/contact/socialm.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-whatsapp {
+    background: url('../assets/contact/whatsapp.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-telegram {
+    background: url('../assets/contact/telegram.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-facebook {
+    background: url('../assets/contact/facebook.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+

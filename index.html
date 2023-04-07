@@ -15,32 +15,32 @@
 
 <body>
     <header class="header">
-            <nav class="header__nav">
-                <ul class="header__list">
-                    <li class="header__item">
-                        <a class="header__link" href="#about">Sobre mi</a>
-                    </li>
-                    <li class="header__item">
-                        <a class="header__link" href="#skills">Mis habilidades</a>
-                    </li>
-                    <li class="header__item">
-                        <a class="header__link" href="">Portafolio</a>
-                    </li>
-                    <li class="header__item">
-                        <a class="header__link" href="">Blog</a>
-                    </li>
-                    <li class="header__item">
-                        <a class="header__link" href="">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="header__presentacion-container">
-                <h1 class="header__title">Hola! mi nombre es <span>Angel Gutierrez</span></h1>
-                <p class="header__text">Esta es mi pagina web personal</p>
-                <button class="boton">
-                    <a class="boton__link" href="/">Descargar CV</a>
-                </button>
-            </div>
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__item">
+                    <a class="header__link" href="#about">Sobre mi</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="#skills">Mis habilidades</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="#portafolio">Portafolio</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="">Blog</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__presentacion-container">
+            <h1 class="header__title">Hola! mi nombre es <span>Angel Gutierrez</span></h1>
+            <p class="header__text">Esta es mi pagina web personal</p>
+            <button class="boton">
+                <a class="boton__link" href="/">Descargar CV</a>
+            </button>
+        </div>
     </header>
 
     <main class="main">
@@ -49,7 +49,9 @@
                 Acerca de mi
             </p>
             <p class="main-about__text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores nemo laborum doloremque vitae voluptate, illo qui inventore totam veritatis, harum nihil saepe repellat nostrum magni ipsa nobis reprehenderit ipsum rerum.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores nemo laborum doloremque vitae
+                voluptate, illo qui inventore totam veritatis, harum nihil saepe repellat nostrum magni ipsa nobis
+                reprehenderit ipsum rerum.
             </p>
         </section>
 
@@ -71,7 +73,7 @@
             </figure>
         </section>
 
-        <section class="main__portafolio">
+        <section class="main__portafolio" id="portafolio">
             <p class="main-portafolio__title">
                 Portafolio
             </p>
@@ -92,6 +94,45 @@
                 <img src="" alt="">
                 <figcaption>Proyecto 1</figcaption>
             </figure>
+        </section>
+
+        <section class="main__contact" id="contact">
+            <p class="main-contact__title">Contacto</p>
+            <ul class="main-contact__list">
+                <li class="main-contact__item">
+                    <p class="contact-item__title">
+                        Gmail
+                        <span class="contact-gmail contact--icon-size"></span>
+                    </p>
+                    <a href="mailto:gutierrez.cantuta.luis@gmail.com">
+                        gutierrez.cantuta.luis@gmail.com
+                    </a>
+                </li>
+                <li class="main-contact__item">
+                    <p class="contact-item__title">
+                        Numero de Celular
+                        <span class="contact-phone contact--icon-size"></span>
+                    </p>
+                    <p class="contact__phone-number">
+                        71910359
+                    </p>
+                </li>
+                <li class="main-contact__item">
+                    <p class="contact-item__title">
+                        Redes Sociales
+                        <span class="contact-socialm contact--icon-size"></span>
+                    </p>
+                    <a href="">
+                        <span class="contact-whatsapp contact--icon-size"></span>
+                    </a>
+                    <a href="">
+                        <span class="contact-telegram contact--icon-size"></span>
+                    </a>
+                    <a href="">
+                        <span class="contact-facebook contact--icon-size"></span>
+                    </a>
+                </li>
+            </ul>
         </section>
     </main>
 
