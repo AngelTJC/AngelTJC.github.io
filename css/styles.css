@@ -152,14 +152,14 @@ body {
 
 /* Secction my skills */
 
-.main__skills{
+.main__skills {
     width: 100vw;
     height: auto;
     background: var(--pink);
     padding: 100px 0;
 }
 
-.main-skills__title{
+.main-skills__title {
     text-align: center;
     font-size: var(--lg);
     font-weight: bold;
@@ -167,12 +167,38 @@ body {
     color: var(--deepblue);
 }
 
-.main-skills__img{
+.main-skills__img {
     width: 140px;
     margin: 0 auto;
     padding-bottom: 2.5rem;
 }
 
-.main-skills__img img{
+.main-skills__img img {
+    width: 100%;
+}
+
+
+/* Section porfolio */
+.main__portafolio {
+    width: 100vw;
+    height: auto;
+    background-color: var(--white-w);
+    padding: 100px 0;
+}
+
+.main-portafolio__title {
+    text-align: center;
+    font-size: var(--lg);
+    font-weight: bold;
+    padding: 0 0 3rem 0;
+    color: var(--deepblue);
+}
+.main-portafolio__img{
+    width: 140px;
+    margin: 0 auto;
+    padding: 2.5rem;
+}
+
+.main-portafolio__img img{
     width: 100%;
 }
