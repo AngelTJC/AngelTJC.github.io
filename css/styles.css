@@ -43,6 +43,7 @@ body {
 
 
 /* seccion header */
+
 .header {
     width: 100vw;
     height: 100vh;
@@ -51,6 +52,12 @@ body {
     background-position: center;
     background-repeat: none;
     padding: 0.1rem;
+}
+
+.header__capa{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
 }
 
 .header__nav {
@@ -112,9 +119,14 @@ body {
     align-items: center;
 }
 
+.header__photo{
+    width: 350px;
+    max-width: 70%;
+}
+
 .header__title {
     position: relative;
-    top: -53px;
+    top: 16px;
     text-align: center;
     color: white;
     font-size: var(--xlg);
@@ -128,7 +140,7 @@ body {
 
 .header__text {
     position: relative;
-    bottom: 50px;
+    bottom: -20px;
     color: white;
     font-size: var(--md);
 }
@@ -139,7 +151,7 @@ body {
     border-radius: 20px;
     background-color: var(--sky);
     position: relative;
-    bottom: -17;
+    bottom: -70px;
 }
 
 .boton__link {
@@ -367,6 +379,7 @@ body {
         flex-direction: row;
         border-left: none;
     }
+
 }
 
 @media (min-width:900px){
@@ -400,5 +413,9 @@ body {
         justify-content: space-between;
         align-items: center;
         width: 900px;
+    }
+    .header__photo{
+        width: 400px;
+        max-width: 100%;
     }
 }
