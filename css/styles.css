@@ -38,6 +38,13 @@ ul {
 body {
     font-size: 1.6rem;
     font-family: 'Ubuntu', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../assets/astronauta.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: none;
+    background-attachment: fixed;
 }
 
 
@@ -47,15 +54,12 @@ body {
 .header {
     width: 100vw;
     height: 100vh;
-    background-image: url('../assets/teclado.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: none;
     padding: 0.1rem;
 }
 
-.header__capa{
-    background-color: rgba(0, 0, 0, 0.5);
+.header__capa {
+    background-color: rgba(46, 32, 78, 0.37);
+    ;
     width: 100vw;
     height: 100vh;
 }
@@ -79,11 +83,16 @@ body {
     font-weight: bold;
     color: var(--white-w);
     margin: 41px 0px 0px 39px;
+    box-shadow:
+        4px 4px 6px rgb(16, 69, 193) inset,
+        -4px -4px 6px rgb(16, 69, 193) inset;
 }
 
 .header__blog:hover,
 .header__blog:active {
     background-color: rgb(81, 99, 204);
+    width: 77px;
+    height: 52px;
 }
 
 .header__list {
@@ -119,7 +128,7 @@ body {
     align-items: center;
 }
 
-.header__photo{
+.header__photo {
     width: 350px;
     max-width: 70%;
 }
@@ -131,6 +140,7 @@ body {
     color: white;
     font-size: var(--xlg);
     padding: 0 10px;
+    letter-spacing: 1px;
 }
 
 .header__title span {
@@ -143,6 +153,7 @@ body {
     bottom: -20px;
     color: white;
     font-size: var(--md);
+    letter-spacing: 1px;
 }
 
 .boton {
@@ -152,6 +163,9 @@ body {
     background-color: var(--sky);
     position: relative;
     bottom: -70px;
+    box-shadow:
+        4px 4px 6px 0 #3384ec inset,
+        -4px -4px 6px 0 #3384ec inset;
 }
 
 .boton__link {
@@ -171,7 +185,7 @@ body {
     width: 100vw;
     height: auto;
     background-color: var(--white-w);
-    padding: 100px 0;
+    padding: 60px 0;
 }
 
 .main-about__title {
@@ -197,7 +211,7 @@ body {
     width: 100vw;
     height: auto;
     background: var(--pink);
-    padding: 100px 0;
+    padding: 60px 0;
 }
 
 .main-skills__title {
@@ -224,7 +238,7 @@ body {
     width: 100vw;
     height: auto;
     background-color: var(--white-w);
-    padding: 100px 0;
+    padding: 60px 0;
 }
 
 .main-portafolio__title {
@@ -251,7 +265,7 @@ body {
     width: 100vw;
     height: auto;
     background-color: var(--pink);
-    padding: 100px 0;
+    padding: 60px 0;
 }
 
 .main-contact__title {
@@ -268,14 +282,14 @@ body {
     margin-right: auto;
 }
 
-.main-contact__item{
+.main-contact__item {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.redes-sociales{
+.redes-sociales {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -366,30 +380,36 @@ body {
 
 /*Media queries*/
 
-@media (min-width:660px){
-    .header__nav{
+@media (min-width:660px) {
+    .header__nav {
         padding: 2.5rem 3rem;
     }
 
-    .header__blog{
+    .header__blog {
         margin: 0;
     }
 
-    .header__list{
+    .header__list {
         flex-direction: row;
         border-left: none;
+        margin-right: 30px;
+
+    }
+
+    .header__title {
+        font-size: 50px;
     }
 
 }
 
-@media (min-width:900px){
-    .main__about div{
+@media (min-width:900px) {
+    .main__about div {
         width: 900px;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .main__skills div{
+    .main__skills div {
         display: flex;
         flex-wrap: wrap;
         place-content: center;
@@ -398,7 +418,7 @@ body {
         margin-right: auto;
     }
 
-    .main__portafolio div{
+    .main__portafolio div {
         display: flex;
         flex-wrap: wrap;
         place-content: center;
@@ -407,14 +427,15 @@ body {
         margin-right: auto;
     }
 
-    .main-contact__list{
+    .main-contact__list {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
         width: 900px;
     }
-    .header__photo{
+
+    .header__photo {
         width: 400px;
         max-width: 100%;
     }
