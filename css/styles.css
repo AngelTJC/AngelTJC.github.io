@@ -20,11 +20,13 @@ html {
     --sky: #44bef7;
 
     /* Tamaño de fuente */
-    --sm: 1.2rem;
-    --md: 1.8rem;
-    --lg: 2.5rem;
-    --xlg: 4rem;
-
+    --titulo1:3.2rem;
+    --titulo2:2.8rem;
+    --titulo3:2.2rem;
+    --titulo4:1.8rem;
+    --normal: 1.8rem;
+    --small: 1.4rem;
+    --smaller: 1.2rem;
 }
 
 a {
@@ -80,7 +82,10 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    font-weight: bold;
+    font-weight: 500;
+    font-size: var(--normal);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
     color: var(--white-w);
     margin: 41px 0px 0px 39px;
     box-shadow:
@@ -109,8 +114,10 @@ body {
 
 .header__link {
     color: white;
-    font-size: var(--md);
+    font-size: var(--normal);
     font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .header__link:hover,
@@ -138,9 +145,11 @@ body {
     top: 16px;
     text-align: center;
     color: white;
-    font-size: var(--xlg);
+    font-size: var(--titulo1);
     padding: 0 10px;
     letter-spacing: 1px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .header__title span {
@@ -152,8 +161,11 @@ body {
     position: relative;
     bottom: -20px;
     color: white;
-    font-size: var(--md);
+    font-size: var(--normal);
     letter-spacing: 1px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
 }
 
 .boton {
@@ -166,18 +178,24 @@ body {
     box-shadow:
         4px 4px 6px 0 #3384ec inset,
         -4px -4px 6px 0 #3384ec inset;
+    transition: all 0.5s;
 }
 
 .boton__link {
-    color: white;
-    font-size: var(--md);
-    font-weight: 700;
+    color: var(--white-w);
+    font-size: var(--normal);
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 5px  var(--blue-p);
 }
 
 .boton:hover,
 .boton:active {
     background-color: var(--blue-p);
+    width:170px;
+    bottom: -67px;
 }
+
 
 
 /* Section about-me*/
@@ -190,18 +208,21 @@ body {
 
 .main-about__title {
     text-align: center;
-    font-size: var(--lg);
+    font-size: var(--titulo2);
     font-weight: bold;
-    padding: 0 0 3rem 0;
+    padding-bottom:1.6rem;
     color: var(--deepblue);
+    letter-spacing: 0.5px;
 }
 
 .main-about__text {
     width: 80%;
     margin: 0 auto;
-    font-size: var(--md);
-    line-height: 1.6;
+    font-size: var(--normal);
+    line-height: 1.5;
+    letter-spacing: 0.5px;
     margin-top: 2rem;
+    padding-bottom: 1.6rem;
 }
 
 
@@ -216,9 +237,9 @@ body {
 
 .main-skills__title {
     text-align: center;
-    font-size: var(--lg);
+    font-size: var(--titulo2);
     font-weight: bold;
-    padding: 0 0 3rem 0;
+    padding-bottom: 4rem;
     color: var(--deepblue);
 }
 
@@ -230,6 +251,9 @@ body {
 
 .main-skills__img img {
     width: 100%;
+    box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.37);
+    padding-top:1.6rem ;
+    padding-bottom: 1.6rem;
 }
 
 
@@ -243,10 +267,11 @@ body {
 
 .main-portafolio__title {
     text-align: center;
-    font-size: var(--lg);
+    font-size: var(--titulo2);
     font-weight: bold;
-    padding: 0 0 3rem 0;
+    padding: 0 0 4rem 0;
     color: var(--deepblue);
+    letter-spacing: 0.5px;
 }
 
 .main-portafolio__img {
@@ -270,10 +295,11 @@ body {
 
 .main-contact__title {
     text-align: center;
-    font-size: var(--lg);
+    font-size: var(--titulo2);
     font-weight: bold;
-    padding: 0 0 3rem 0;
+    padding: 0 0 4rem 0;
     color: var(--deepblue);
+    letter-spacing: 0.5px;
 }
 
 .main-contact__list {
@@ -287,6 +313,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 3.2rem;
 }
 
 .redes-sociales {
@@ -296,9 +323,10 @@ body {
 }
 
 .contact-item__title {
-    font-size: var(--md);
-    font-weight: bold;
-    padding: 3rem 0 1rem 0;
+    font-size: var(--titulo3);
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 3rem 0 1.6rem 0;
     color: var(--blue-p);
     display: flex;
     justify-content: flex-start;
@@ -327,8 +355,9 @@ body {
 }
 
 .contact__phone-number {
-    font-size: var(--md);
+    font-size: var(--normal);
     color: var(--deepblue);
+    letter-spacing: 0.5px;
 }
 
 .contact-socialm {
@@ -370,12 +399,13 @@ body {
 
 .footer p {
     color: var(--white-w);
-    font-weight: 600;
-    font-size: var(--sm);
+    font-weight: 500;
+    font-size: var(--small);
+    letter-spacing: 1px;
 }
 
 .footer p span {
-    color: var(--blue-s);
+    color: var(--sky);
 }
 
 /*Media queries*/
