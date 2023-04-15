@@ -91,14 +91,15 @@ body {
     box-shadow:
         4px 4px 6px rgb(16, 69, 193) inset,
         -4px -4px 6px rgb(16, 69, 193) inset;
+    transition: transform 0.2s ease-in-out;
 }
 
 .header__blog:hover,
 .header__blog:active {
     background-color: rgb(81, 99, 204);
-    width: 77px;
-    height: 52px;
+    transform: translatey(-5px);
 }
+
 
 .header__list {
     display: flex;
@@ -110,6 +111,12 @@ body {
 
 .header__item {
     padding: 1rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.header__item:hover,
+.header__item:active{
+    transform: translateY(-5px);
 }
 
 .header__link {
@@ -123,6 +130,7 @@ body {
 .header__link:hover,
 .header__link:active {
     border-bottom: 0.5rem solid var(--sky);
+    line-height: 1.5;
 }
 
 .header__presentacion-container {
@@ -178,7 +186,7 @@ body {
     box-shadow:
         4px 4px 6px 0 #3384ec inset,
         -4px -4px 6px 0 #3384ec inset;
-    transition: all 0.5s;
+    transition: transform 0.2s ease-in-out;
 }
 
 .boton__link {
@@ -192,8 +200,7 @@ body {
 .boton:hover,
 .boton:active {
     background-color: var(--blue-p);
-    width:170px;
-    bottom: -67px;
+    transform: translateY(-5px);
 }
 
 
@@ -254,6 +261,7 @@ body {
     box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.37);
     padding-top:1.6rem ;
     padding-bottom: 1.6rem;
+    border-radius: 10px;
 }
 
 
@@ -372,6 +380,12 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    transition: transform .2s ease-in-out;
+}
+
+.contact-whatsapp:hover,
+.contact-whatsapp:active{
+    transform: translateY(-5px);
 }
 
 .contact-telegram {
@@ -379,6 +393,12 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.contact-telegram:hover,
+.contact-telegram:active{
+    transform: translateY(-5px);
 }
 
 .contact-facebook {
@@ -386,9 +406,13 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    transition: transform 0.2s ease-in-out;
 }
 
-
+.contact-facebook:hover,
+.contact-facebook:active{
+    transform: translateY(-5px);
+}
 /* Section footer */
 .footer {
     width: 100vw;
