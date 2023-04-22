@@ -125,7 +125,7 @@ body {
     position: fixed;
     top: 80px;
     clip-path: circle(0 at center);
-    transition: clip-path 1s ease-in-out;
+    transition: clip-path 0.8s ease-in-out;
 }
 
 .header__list {
