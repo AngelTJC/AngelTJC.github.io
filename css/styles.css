@@ -348,7 +348,7 @@ body {
 
 .experiments__container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 3.2rem;
     justify-content: center;
     align-items: center;
@@ -356,16 +356,19 @@ body {
 
 .main-experiments__fig img {
     max-width: 100%;
+    margin-bottom: 1.6rem;
 }
 
 .main-experiments__fig figcaption {
     color: var(--deepblue);
     font-size: var(--normal);
-    font-weight: 500;
-    background-color: #ffffffa1;
+    font-weight: normal;
+    background-color:var(--pink);
+    border: 1px solid var(--grayblue);
+    border-radius: 10px;
     display: inline;
     letter-spacing: 1px;
-    padding-top: 1.6rem;
+    padding: 2px;
 }
 
 /* Section contact */
