@@ -352,11 +352,21 @@ body {
     gap: 3.2rem;
     justify-content: center;
     align-items: center;
+    max-width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main-experiments__fig img {
     max-width: 100%;
     margin-bottom: 1.6rem;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 10px -10px 5px rgba(7, 7, 7, 0.37);
+}
+
+.main-experiments__fig img:hover{
+    transform: translateY(5px);
 }
 
 .main-experiments__fig figcaption {
