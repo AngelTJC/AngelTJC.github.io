@@ -41,7 +41,7 @@ body {
     font-size: 1.6rem;
     font-family: 'Ubuntu', sans-serif;
     min-height: 100vh;
-    background-image: url('../assets/astronauta.jpg');
+    background-image: url('../assets/background/background-small.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: none;
@@ -60,7 +60,7 @@ body {
 .header__capa {
     width: 100vw;
     height: 100vh;
-    background-color: hsla(241.9, 47.3%, 39.4%, 0.52);
+    /* background-color: hsla(241.9, 47.3%, 39.4%, 0.52); */
 }
 
 .nav__container {
@@ -357,6 +357,15 @@ body {
     margin-right: auto;
 }
 
+.experiments__title{
+    font-size: var(--titulo3);
+    font-weight: bold;
+    color: var(--pink);
+    letter-spacing: 0.5px;
+    margin-bottom: 3.2rem;
+    text-shadow: 2px 2px 6px rgb(54, 54, 54);
+}
+
 .main-experiments__fig img {
     max-width: 100%;
     margin-bottom: 1.6rem;
@@ -365,7 +374,7 @@ body {
     box-shadow: 10px -10px 5px rgba(7, 7, 7, 0.37);
 }
 
-.main-experiments__fig img:hover{
+.main-experiments__fig img:hover {
     transform: translateY(5px);
 }
 
@@ -373,7 +382,7 @@ body {
     color: var(--deepblue);
     font-size: var(--normal);
     font-weight: normal;
-    background-color:var(--pink);
+    background-color: var(--pink);
     border: 1px solid var(--grayblue);
     border-radius: 10px;
     display: inline;
@@ -526,6 +535,10 @@ body {
 
 @media (min-width:660px) {
 
+    body {
+        background-image: url('../assets/background/background-mid.jpg');
+    }
+
 
     .header__title {
         font-size: 50px;
@@ -598,4 +611,11 @@ body {
         width: 400px;
         max-width: 100%;
     }
+}
+
+@media(min-width:1200px) {
+    body{
+        background-image: url('../assets/background/background-large.jpg');
+    }
+
 }
