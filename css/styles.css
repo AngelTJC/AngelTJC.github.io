@@ -355,6 +355,7 @@ body {
     max-width: 80vw;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 3.2rem;
 }
 
 .experiments__title{
@@ -364,6 +365,7 @@ body {
     letter-spacing: 0.5px;
     margin-bottom: 3.2rem;
     text-shadow: 2px 2px 6px rgb(54, 54, 54);
+    padding-left: 3.2rem;
 }
 
 .main-experiments__fig img {
